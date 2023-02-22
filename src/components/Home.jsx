@@ -14,8 +14,8 @@ const Home = () => {
             As a current graduate in Information Technology with a keen interest
             in full stack development, I am excited to apply my skill to and
             knowledge to create user friendly and dynamic websites. I am eager
-            to learn with a fast paced enviroment that challenges me to grow and
-            develop my skills. I do solve competetive programs in my free time,
+            to learn with a fast paced environment that challenges me to grow and
+            develop my skills. I do solve competitive programs in my free time,
             which helps to develop programming skills and think of an efficient
             solution.Overall, I am committed to delivering high-quality work and
             contributing to the success of any project I am a part of.
