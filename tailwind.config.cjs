@@ -14,6 +14,7 @@ module.exports = {
         wiggle1: {
           '0%': { right: 0 },
           '100%': { right: -200 },
+         
         }
       },
       animation: {

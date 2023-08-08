@@ -6,6 +6,12 @@ import chat from "../assets/portfolio/chat.png";
 import quiz from "../assets/portfolio/quiz.png";
 import typing from "../assets/portfolio/type.png";
 import quizApp from '../assets/portfolio/quizApp.png'
+
+import memoryGame from "../assets/portfolio/memoryGame.png";
+import virtualKeyboard from "../assets/portfolio/virtualKeyboard.png";
+import snakeGame from "../assets/portfolio/snakeGame.png";
+import pathFinder from "../assets/portfolio/pathFinder.png";
+import telegramBot from "../assets/portfolio/telegramBot.png";
 const Portfolio = () => {
     const[openDesc,setOpenDesc] = useState(false);
     const[index,setIndex] = useState(undefined)
@@ -80,11 +86,79 @@ const Portfolio = () => {
               Using this , people can know their typing speed and accuracy given 60 seconds and displays the WPM (words per minute) at the end.
             </div>          
         },
+
+
+       
+    ]
+
+    const pImage = [
+      {
+        id: 1,
+        src: pathFinder,
+        name:'Path Finder',
+        git:"https://github.com/Yogeshkumar-24/path-finder-visualizer",
+        // link:"https://yogeshkumar-24.github.io/type/",
+        desc: <div>
+          This program allows the user to create barriers, set the start and end points, and find the shortest path between them using the A* search algorithm.
+        </div>          
+    },
+
+
+    {
+        id: 2,
+        src: virtualKeyboard,
+        name:'Virtual Keyboard',
+        git:"https://github.com/Yogeshkumar-24/virtual-keyboard",
+        // link:"https://yogeshkumar-24.github.io/type/",
+        desc: <div>
+          This Python script allows you to control a virtual keyboard using hand gestures captured through your webcam.
+        </div>          
+    },
+
+
+    {
+        id: 3,
+        src: snakeGame,
+        name:'Snake Game',
+        git:"https://github.com/Yogeshkumar-24/snake-python",
+        // link:"https://yogeshkumar-24.github.io/type/",
+        desc: <div>
+          This is a simple snake game created using python
+        </div>          
+    },
+
+
+    {
+        id: 4,
+        src: telegramBot,
+        name:'Dictionary Bot - Telegram',
+        git:"https://github.com/Yogeshkumar-24/telegram-dictionary-bot",
+        link:"https://t.me/dictionary_dictionary_bot",
+        desc: <div>
+         Created a dictionary bot which provides meaning for a given word.
+        </div>          
+    },
+
+    ]
+
+
+    const aImage = [
+      
+      {
+        id: 1,
+        src: memoryGame,
+        name:'Memory Game',
+        git:"https://github.com/Yogeshkumar-24/memory-game-lcd",
+        // link:"https://yogeshkumar-24.github.io/type/",
+        desc: <div>
+          This is a Arduino game designed using arduino nano, lcd display and LED's.
+        </div>          
+    },
     ]
 
   return (
-    <div name='projects' className="bg-gradient-to-b from-gray-800 to-black text-white w-full md:h-screen">
-      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full pb-10 ">
+    <div name='projects' className="bg-gradient-to-b from-gray-800 to-black text-white w-full md:h-full ">
+      <div className=" max-w-screen-lg p-4 mx-auto flex flex-col  w-full h-full pb-10 ">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Projects
@@ -92,9 +166,10 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work here!</p>
         </div>
 
-        <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mx-auto sm:px-0 ">
+          <h2 className="text-3xl font-bold ">Web projects</h2>
+        <div  className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto sm:px-0 ">
         {image.map(({src,id,name,link,git,desc}) => (
-              <div key={id} className=" shadow-md my-10 shadow-gray-900 rounded-large h-44 w-80 md:h-40 md:w-72 ">
+              <div key={id} className=" shadow-md my-16 shadow-gray-900 rounded-large h-44 w-80 md:h-40 md:w-72 ">
                 <img src={src} className="hover:scale-105 duration-200 h-full w-full" alt="" />
                 <div className="flex justify-center text-xl font-bold pt-2">{name}</div>
               <div className="  ">
@@ -110,7 +185,56 @@ const Portfolio = () => {
               </div>
         ))}
         </div>
-      
+          {/* <br /><br /><br /> <br /> */}
+          
+      </div>
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full pb-10 md:pt-32">
+      <h2 className="text-3xl font-bold ">Python projects</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto sm:px-0 md:pb-10">
+            {pImage.map(({id,src,name,git,desc}) => (
+              <div key={id} className="shadow-md my-16 shadow-gray-900 rounded-large h-44 w-80 md:h-40 md:w-72">
+
+<img src={src} className="hover:scale-105 duration-200 h-full w-full" alt="" />
+                <div className="flex justify-center text-xl font-bold pt-2">{name}</div>
+              <div className="  ">
+              <div className="flex justify-between px-4">
+                  {/* <a target={"_blank"} href={link} className="w-1/3 py-4 hover:scale-105 duration-200 font-semibold">Demo</a> */}
+                  <button onClick={() => handleOpen(id)} className="w-1/2  hover:opacity-70 duration-200 my-2 rounded-md font-bold   bg-gray-500">Desciption</button>
+                  <a target={"_blank"} href={git} className="w-1/3 py-4 hover:scale-105 duration-200 font-semibold text-right">Code</a>
+                </div>
+                <div key={id} className= {!openDesc && index == id? 'hidden' : 'flex  '}>
+                  <p className={openDesc && id === index? " z-10 bg-gray-800 rounded-md p-4 " :"hidden"} >{desc}</p>
+                  </div>
+              </div>
+
+              </div>
+            ))}
+          </div>
+      </div>
+
+
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full pb-10 md:pt-12">
+      <h2 className="text-3xl font-bold ">Arduino projects</h2>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-16 mx-auto sm:px-0 md:pb-10">
+            {aImage.map(({id,src,name,git,desc}) => (
+              <div key={id} className="shadow-md my-16 shadow-gray-900 rounded-large h-44 w-80 md:h-40 md:w-72">
+
+<img src={src} className="hover:scale-105 duration-200 h-full w-full" alt="" />
+                <div className="flex justify-center text-xl font-bold pt-2">{name}</div>
+              <div className="  ">
+              <div className="flex justify-between px-4">
+                  {/* <a target={"_blank"} href={link} className="w-1/3 py-4 hover:scale-105 duration-200 font-semibold">Demo</a> */}
+                  <button onClick={() => handleOpen(id)} className="w-1/2  hover:opacity-70 duration-200 my-2 rounded-md font-bold   bg-gray-500">Desciption</button>
+                  <a target={"_blank"} href={git} className="w-1/3 py-4 hover:scale-105 duration-200 font-semibold text-right">Code</a>
+                </div>
+                <div key={id} className= {!openDesc && index == id? 'hidden' : 'flex  '}>
+                  <p className={openDesc && id === index? " z-10 bg-gray-800 rounded-md p-4 " :"hidden"} >{desc}</p>
+                  </div>
+              </div>
+
+              </div>
+            ))}
+          </div>
       </div>
     </div>
   );

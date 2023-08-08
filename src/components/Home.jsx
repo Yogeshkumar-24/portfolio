@@ -1,16 +1,17 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-scroll";
+import computerGif from "../assets/comp.gif"
+
 
 const Home = () => {
   return (
     <div name="home">
-      <div className="pt-20 bg-gradient-to-b h-screen from-black to-gray-800">
-        <div className="flex p-20 flex-col h-full mx-auto max-w-full items-center justify-center ">
-          <h1 className="text-white pb-7 text-xl font-bold ">
-            I'm a Full stack developer
-          </h1>
-          <p className="text-white ">
+      <div className=" bg-gradient-to-b h-screen from-black to-gray-800">
+        <div className="flex p-20 pt-0 flex-col h-full mx-auto max-w-full items-center justify-center ">
+
+          {/* <img src={computerGif} alt="" /> */}
+          <p className="text-white text-lg">
             As a current graduate in Information Technology with a keen interest
             in full stack development, I am excited to apply my skill to and
             knowledge to create user friendly and dynamic websites. I am eager

@@ -5,6 +5,9 @@ import javascript from "../assets/javascript.png";
 import node from "../assets/node.png";
 import reactImg from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
+import python from "../assets/python.png";
+import java from "../assets/java.png";
+import cplus from "../assets/c++.png";
 
 const Skills = () => {
 
@@ -46,10 +49,31 @@ const Skills = () => {
             style:"shadow-yellow-500"
         },
       
+        {
+            id: 7,
+            src: python,
+            title: "PYTHON",
+            style:"shadow-blue-500"
+        },
+      
+        {
+            id: 8,
+            src: java,
+            title: "JAVA",
+            style:"shadow-orange-500"
+        },
+      
+        {
+            id: 9,
+            src: cplus,
+            title: "C++",
+            style:"shadow-blue-500"
+        },
+      
     ]
 
   return (
-    <div name='skills' className="pt-20 bg-gradient-to-b from-black to-gray-800 text-white w-full md:h-screen">
+    <div name='skills' className=" bg-gradient-to-b from-black to-gray-800 text-white w-full md:h-screen">
     <div className=" max-w-screen-lg p-4 mx-auto  flex flex-col justify-center w-full h-full  ">
       <div className="pb-8">
         <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
