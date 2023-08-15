@@ -1,9 +1,20 @@
 import React from "react";
 import { FaEye } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa";
+import resume from "../assets/Yogesh_Kumar_Resume.pdf"
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const url = "Yogesh_Kumar_Resume.pdf";
+  // const url = "Yogesh_Kumar_Resume.pdf";
+
+  const downloadCV = () => {
+    // console.log("Clicked")
+    toast.success("Download initiated", {
+      position: toast.POSITION.TOP_RIGHT,
+    });
+    // toast("hello file has been downloaded!")
+  }
 
   return (
     <div
@@ -19,17 +30,18 @@ const Contact = () => {
             </h2>
            </div>
            <div className="flex justify-center gap-10">
-           <a href={url} target="#">
+           <a href={resume} target="#">
               <button className="font-bold group mt-7 flex gap-3 justify-center items-center text-white cursor-pointer px-10 py-2 rounded-md bg-gradient-to-r from-cyan-600 to-blue-600  hover:opacity-80 duration-200">
                 View Resume
                 <FaEye></FaEye>
               </button>
             </a>
-            <a href={url} download={url}>
-              <button className="font-bold group mt-7 flex gap-3 justify-center items-center text-white cursor-pointer px-6 py-2 rounded-md bg-gradient-to-r from-blue-600 to-cyan-600  hover:opacity-80 duration-200">
+            <a href={resume} download="Yogesh_Kumar_Resume">
+              <button onClick={downloadCV} className="font-bold group mt-7 flex gap-3 justify-center items-center text-white cursor-pointer px-6 py-2 rounded-md bg-gradient-to-r from-blue-600 to-cyan-600  hover:opacity-80 duration-200">
                 Download Resume
                 <FaDownload></FaDownload>
               </button>
+           <ToastContainer theme="dark" autoClose={500} />
             </a>
            </div>
           </div>
