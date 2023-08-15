@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="py-10 flex flex-col justify-center ">
            <div>
            <h2 className="text-3xl text-white font-bold">
-              Like my profile, then do check my Resume!
+            Like my profile, then please check out my resume! Thank you.
             </h2>
            </div>
            <div className="flex justify-center gap-10">
