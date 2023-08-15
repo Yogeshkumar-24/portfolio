@@ -23,9 +23,9 @@ const Home = () => {
           </p>
           <Link to={'projects'} smooth duration={500}>
             {" "}
-            <button className="group mt-7 flex gap-3 justify-center items-center text-white cursor-pointer px-6 py-2 rounded-md bg-gradient-to-r from-cyan-600 to-blue-600  hover:opacity-80 duration-200">
+            <button className="group mt-7 flex gap-3 font-bold  justify-center items-center text-white cursor-pointer px-6 py-2 rounded-md bg-gradient-to-r from-cyan-600 to-blue-600  hover:opacity-80 duration-200">
               <Link to={"projects"} smooth duration={500}>
-                Projects{" "}
+               <p className="tracking-wider"> Projects{" "}</p>
               </Link>
               <span className="group-hover:rotate-90 duration-200">
                 <FaArrowRight />

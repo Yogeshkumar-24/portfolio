@@ -25,7 +25,7 @@ export default function TypeWriter({ appendClass, prefix }) {
         },
         {
           prep: 'a',
-          suffix: 'Competetive Programmer'
+          suffix: 'Competitive Programmer'
         },
       ];
 
