@@ -28,7 +28,7 @@ const Portfolio = () => {
             git: "https://github.com/Yogeshkumar-24/hotelbooking",
             desc: <div>
               <b>Technology used:</b> MERN <br />
-              Users can Register and Login , and can choose the hotel they want and select select the room they wish for the desierd date.Used JWT for authentication.
+              Users can Register and Login , and can choose the hotel they want and select select the room they wish for the desired date.Used JWT for authentication.
             </div>
         },
         {
