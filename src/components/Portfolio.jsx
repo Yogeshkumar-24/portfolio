@@ -93,7 +93,7 @@ const Portfolio = () => {
 
     const pImage = [
       {
-        id: 1,
+        id: 7,
         src: pathFinder,
         name:'Path Finder',
         git:"https://github.com/Yogeshkumar-24/path-finder-visualizer",
@@ -105,7 +105,7 @@ const Portfolio = () => {
 
 
     {
-        id: 2,
+        id: 8,
         src: virtualKeyboard,
         name:'Virtual Keyboard',
         git:"https://github.com/Yogeshkumar-24/virtual-keyboard",
@@ -117,7 +117,7 @@ const Portfolio = () => {
 
 
     {
-        id: 3,
+        id: 9,
         src: snakeGame,
         name:'Snake Game',
         git:"https://github.com/Yogeshkumar-24/snake-python",
@@ -129,7 +129,7 @@ const Portfolio = () => {
 
 
     {
-        id: 4,
+        id: 10,
         src: telegramBot,
         name:'Dictionary Bot - Telegram',
         git:"https://github.com/Yogeshkumar-24/telegram-dictionary-bot",
@@ -145,7 +145,7 @@ const Portfolio = () => {
     const aImage = [
       
       {
-        id: 1,
+        id: 11,
         src: memoryGame,
         name:'Memory Game',
         git:"https://github.com/Yogeshkumar-24/memory-game-lcd",
